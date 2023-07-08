@@ -1,0 +1,17 @@
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int n = nums.size();
+        int i = 0, j = 0;
+        while(j<n)
+        {
+            if(nums[j]==0) j++;//if u found zero ,increment
+            else{
+                swap(nums[i], nums[j]); //if u found non zero swap it with zero 
+                i++;
+                j++;
+            }
+        }
+    }
+};
+    
